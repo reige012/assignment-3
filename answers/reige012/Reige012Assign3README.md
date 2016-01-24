@@ -68,7 +68,7 @@ ACGRRGCGAGCGAGSGAGCGCTATATATATATGCRGCTSGCTGTG
 
   **FIND**:
   ```
-(ATATATATAT) #**This is basically the most tedious way, but it works.**
+(AT)+
   ```
 
 4. How would you find all instances of `R` **or** `S` (degenerate base codes) in the same DNA sequence, above? Enter your answer in the triple quotes below:
@@ -217,7 +217,7 @@ AGGGTGAAGGTGGCGCAGAATGAGCTGGGACAGCAGATCCTAGCTGACTTCGAGGAAGCCT
 
   **FIND**:
   ```
-(@.{6})(:.*)([^\n]*\n+)+(\d*)([^\n]*\n+)+(.*)
+@().{6})(:.*)([^\n]*\n+)+(\d*)([^\n]*\n+)+(.*)
   ```
 
   **REPLACE**:
